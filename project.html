@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&family=Montserrat:wght@400;600&display=swap" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="hero.css">
+    <style>
+      .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        .card-container.row-2 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card {
+            position: relative;
+            overflow: hidden;
+            border: none;
+            border-radius: 0;
+            height: 300px;
+        }
+        .card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        .card-overlay h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .card-overlay a {
+            font-size: 14px;
+            color: #fff;
+            padding: 5px 15px;
+            border: 1px solid #fff;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .card-overlay a:hover {
+            background: #fff;
+            color: #000;
+        }
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .card-container.row-2 {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media (max-width: 576px) {
+            .card-container {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body style="background: linear-gradient(to right, #000000, #060D0D); overflow-x: hidden;">
+  
+  <video src="ad1.mp4" width="100%"  autoplay muted loop class="video-background"></video>
+  <div class="hero">
+    <nav class="navbar navbar-dark">
+        <span class="navbar-brand mb-0 h1 mx-auto" style="-webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: black; font-size: 50px; font-family: Palatino, URW Palladio L, serif;">COSMIQUE</span>
+        <div class="container" style="display: flex; justify-content: space-between;">
+          <ul>
+            <li><a href="project.html" class="a"><span class="material-symbols-outlined" style="color: white; font-size: 35px;">
+              home
+              </span></a></li>
+            <li><a href="profile.html" class="a"><span class="material-symbols-outlined" style="color: white; font-size: 35px;">
+              person
+              </span></a></li>
+            <li><a href="contact.html" class="a"><span class="material-symbols-outlined" style="color: white; font-size: 35px;">
+              call
+              </span></a></li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+  <br>
+
+  <section id="features" class="py-5">
+    <div class="container-fluid"> 
+        <div class="row"> 
+            <div class="col-md-4 d-flex flex-column align-items-center text-center">
+              <i class="bi bi-watch"></i>
+                <h3>Swiss Excellence</h3>
+                <p>Crafted with precision and expertise in our Swiss workshops</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center">
+              <i class="bi bi-globe"></i>
+                <h3>Global Heritage</h3>
+                <p>A legacy of excellence spanning generations</p>
+            </div>
+            <div class="col-md-4 d-flex flex-column align-items-center text-center">
+              <i class="bi bi-shield-shaded"></i>
+                <h3>Lifetime Warranty</h3>
+                <p>Our commitment to lasting quality and service</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container1 py-5">
+  
+  <div class="card-container">
+      <div class="card">
+          <img src="watches/ocean.avif" alt="Chronograph Watches">
+          <div class="card-overlay">
+              <h3>Ocean</h3>
+              <a href="collection2.html">Discover More</a>
+          </div>
+      </div>
+     
+      <div class="card">
+          <img src="watches/cloud.avif" alt="Skeleton Watches">
+          <div class="card-overlay">
+              <h3>Cloud</h3>
+              <a href="collection4.html">Discover More</a>
+          </div>
+      </div>
+      
+      <div class="card">
+          <img src="watches/space.avif" alt="Leather Watches">
+          <div class="card-overlay">
+              <h3>Space</h3>
+              <a href="collection3.html">Discover More</a>
+          </div>
+      </div>
+  </div>
+  
+  <div class="card-container row-2 mt-3">
+      
+      <div class="card">
+          <img src="watches/forest.avif" alt="Men's Watches">
+          <div class="card-overlay">
+              <h3>Forest</h3>
+              <a href="collection1.html">Explore More</a>
+          </div>
+      </div>
+      
+      <div class="card">
+          <img src="watches/moon.avif" alt="Women's Watches">
+          <div class="card-overlay">
+              <h3>Moon</h3>
+              <a href="collection5.html">Explore More</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  
+  <div class="row firstpanel" >
+    <div class="col-md-5">
+        <img src="making.jpg" alt="Watch Image" height="450px" width="550px" class="rounded making-of">
+    </div>
+    <div class="col-md-7">
+    <pre>
+          Cosmique creates luxury watches blending precision, 
+                  artistry, and elegance. 
+    Each timepiece symbolizes sophistication, individuality, 
+  and timeless excellence, connecting you to the extraordinary. 
+                                      Time, reimagined.</pre>
+    </div>
+</div>
+
+
+  <div class="row" style="background-color: #060D0D; height: 500px;">
+    <div class="col-md-4"><pre style="transform: translateX(50px) translateY(50px);">
+  <span style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; font-weight: lighter; font-size: 56px;">      OUR</span>
+  <span style="font-family: 'Times New Roman', Times, serif; font-size: 60px; font-style: italic;">      LEGACY 
+      Since 1908</span>
+  </pre>
+  </div>
+    <div class="col-md-8">
+      <h1>    </h1>
+<div class="wrapper">
+    <div class="items">
+      <a href="product.html?id=force-green"><img class="watches" src="watches/watch1.jpeg"></a>
+      <a href="product.html?id=force-green" style="text-decoration: none; color: white;"><div class="company">Cosmique Force Green</div></a>
+      <div class="other">Bold green dial, premium craftsmanship, strength, precision, and timeless confidence</div>
+    </div>
+    <div class="items">
+      <a href="product.html?id=moon-black"><img class="watches" src="watches/watch2.jpeg"></a>
+      <a href="product.html?id=moon-black" style="text-decoration: none; color: white;"><div class="company">Cosmique Moon One</div></a>
+      <div class="other">Celestial design, refined detailing, elegance, innovation, and timeless moments</div>
+    </div>
+    <div class="items">
+      <a href="product.html?id=forest-green"><img class="watches" src="watches/watch3.jpeg"></a>
+      <a href="product.html?id=forest-green" style="text-decoration: none; color: white;"><div class="company">Cosmique Forest</div></a>
+      <div class="other">Nature-inspired, deep tones, sophisticated, rugged, durable, and luxurious</div>
+    </div>
+    <div class="items">
+      <a href="product.html?id=ocean-blue"><img class="watches" src="watches/watch41.jpg"></a>
+      <a href="product.html?id=ocean-blue" style="text-decoration: none; color: white;"><div class="company">Cosmique Oceania IV</div></a>
+      <div class="other">Ocean-inspired, sleek, adventurous, precise, stylish, and elegantly designed</div>
+    </div>
+    <div class="items">
+      <a href="product.html?id=cloud-white"><img class="watches" src="watches/watch51.jpg"></a>
+      <a href="product.html?id=cloud-white" style="text-decoration: none; color: white;"><div class="company">Cosmique Cloud Blue</div></a>
+      <div class="other">Airy, sophisticated, soft blue, sleek, elegant, and timeless</div>
+    </div>
+</div>
+    </div>
+  </div>
+
+  
+<footer style="background-color: black; color: white; padding: 20px 50px; font-style: italic;">
+  <div style="display: flex; justify-content: space-between; align-items: start;">
+
+      <div>
+          <h3>About Cosmique</h3>
+          <p>Crafting exceptional timepieces since 1908</p>
+      </div>
+
+      <div>
+          <h3>Collections</h3>
+          <ul style="list-style: none; padding: 0;">
+              <li>Moon</li>
+              <li>Space</li>
+              <li>Ocean</li>
+          </ul>
+      </div>
+
+      <div>
+          <h3>Customer Service</h3>
+          <ul style="list-style: none; padding: 0;">
+              <li>Contact Us</li>
+              <li>Shipping & Returns</li>
+              <li>Warranty</li>
+          </ul>
+      </div>
+
+      <div>
+          <h3>Newsletter</h3>
+          <p>Stay updated with our latest collections</p>
+          <form>
+              <input type="email" placeholder="Enter your email" style="padding: 5px; margin-right: 10px;">
+              <button type="submit" style="padding: 5px;">Subscribe</button>
+          </form>
+      </div>
+  </div>
+  <div style="text-align: center; margin-top: 20px;">
+    <div class="col-md-6 text-center text-md-end social-icons" style="transform: translateX(15%);">
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-twitter"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+      <a href="#"><i class="bi bi-pinterest"></i></a>
+  </div>
+      <p style="transform: translateX(0%);">© 2025 Cosmique. All rights reserved.</p>
+  </div>
+</footer>
+
+  
+</body>
+</html>

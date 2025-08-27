@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(to right, #000000, #060D0D);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero1 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(0,0,0,0.4), transparent);
+}
+.container2{
+    position: relative;
+    margin-left: 50px;
+}
+.contact-container {
+    background-color: rgba(6, 13, 13, 0.8);
+    border-radius: 15px;
+    padding: 40px;
+    margin-top: 80px;
+    backdrop-filter: blur(10px);
+}
+.form-control {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+}
+.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: white;
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+}
+.form-label {
+    color: #fff;
+}
+.contact-info {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding-left: 40px;
+    height: 100%;
+}
+.btn-outline-light:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.contact-title {
+    font-family: Palatino, URW Palladio L, serif;
+    margin-bottom: 30px;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .contact-info {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        padding-left: 0;
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+}
+.p{
+    transform: translateX(-40%);
+}
+
+.navbar {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: auto; 
+    margin-left: auto;  
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link span {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-link span:hover {
+    transform: scale(1.1);
+}

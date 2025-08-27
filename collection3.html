@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-collection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&family=Montserrat:wght@400;600&display=swap" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.7.1/font/bootstrap-icons.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="hero.css">
+
+    <style>
+        body {
+            background: linear-gradient(to right, #000000, #060D0D);
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            overflow-x: hidden;
+        }
+        .p {
+            transform: translateX(-40%);
+        }
+        .navbar-brand {
+            transform: translateX(-230%);
+        }
+        #card {
+            background-color: #060D0D;
+            min-height: 400px;
+        }
+        #collections {
+            margin-top: 6rem !important;
+        }
+    </style>
+    
+</head>
+<body class="min-h-screen bg-[#d9d9d9] py-8 px-4 sm:px-6 lg:px-8" style="background: linear-gradient(to right, #000000, #060D0D);">
+
+    <nav class="navbar navbar-dark" style="background-image: linear-gradient(to bottom, rgb(0,0,0,0.8), rgb(0,0,0,0.4), transparent);">
+        <div class="container d-flex justify-content-between">
+            <a href="project.html"><span class="navbar-brand mb-0 h1 mx-auto" style="-webkit-text-stroke-width: 0.5px; -webkit-text-stroke-color: black; font-size: 50px; font-family: Palatino, URW Palladio L, serif;">COSMIQUE</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="max-w-7xl mx-auto space-y-6 mt-5" id="collections">
+        
+        <div class="rounded-3xl overflow-hidden shadow-lg" id="card">
+            <div class="grid md:grid-cols-2 items-center">
+                <div class="p-4 md:p-8">
+                    <img
+                        src="watches/watch12.jpg"
+                        alt="Luxury watch with green leather strap and floral pattern"
+                        class="rounded-2xl w-full h-64 md:h-96 object-cover"
+                    />
+                </div>
+                <div class="p-4 md:p-8">
+                    <div class="flex flex-col justify-center">
+                        <div class="space-y-3">
+                            <h2 class="text-2xl font-bold text-black-900">Cosmique Space Black</h2>
+                            <p class="text-gray-600 text-sm">
+                                Black Matte finished ultra luxury watch with a 42mm case size, 18k gold plated buckle, and a black leather
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-lg" id="card">
+            <div class="grid md:grid-cols-2 items-center">
+                <div class="p-4 md:p-8 order-last md:order-first">
+                    <div class="flex flex-col justify-center">
+                        <div class="space-y-3">
+                            <h2 class="text-2xl font-bold">Cosmique Blue</h2>
+                            <p class="text-gray-600 text-sm">
+                                Luxury watch with a 42mm case size, 18k gold plated buckle, and a blue leather which depicts the space.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:p-8">
+                    <img
+                        src="watches/watch7.jpg"
+                        alt="Luxury watch with green leather strap and floral pattern"
+                        class="rounded-2xl w-full h-64 md:h-96 object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-lg" id="card">
+            <div class="grid md:grid-cols-2 items-center">
+                <div class="p-4 md:p-8">
+                    <img
+                        src="watches/space1.webp"
+                        alt="Luxury watch with green leather strap and floral pattern"
+                        class="rounded-2xl w-full h-64 md:h-96 object-cover"
+                    />
+                </div>
+                <div class="p-4 md:p-8">
+                    <div class="flex flex-col justify-center">
+                        <div class="space-y-3">
+                            <h2 class="text-2xl font-bold">Cosmique Nebula Fury</h2>
+                            <p class="text-gray-600 text-sm">
+                                A watch filled with the fury of Nebula.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden shadow-lg" id="card">
+            <div class="grid md:grid-cols-2 items-center">
+                <div class="p-4 md:p-8 order-last md:order-first">
+                    <div class="flex flex-col justify-center">
+                        <div class="space-y-3">
+                            <h2 class="text-2xl font-bold">Cosmique Stars</h2>
+                            <p class="text-gray-600 text-sm">
+                                A star filled watch 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 md:p-8">
+                    <img
+                        src="watches/space2.webp"
+                        alt="Luxury watch with green leather strap and floral pattern"
+                        class="rounded-2xl w-full h-64 md:h-96 object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-light py-10 mt-5 w-100" style="background-color: black; background-size: contain;">
+        <div class="container text-center">
+            <p class="p">&copy; 2023 Cosmique Watches. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
